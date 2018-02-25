@@ -69,7 +69,44 @@
         <hr class="star-dark mb-5">
         <div class="row">
 			<div class="col-xs-8 max-auto">
-				Hello
+				<h3>
+					Getting Started with MQTT
+				</h3>
+				<h5>
+					Mosquitto
+				</h5>
+				
+				<div>
+					Mosquitto is a free and light-weight MQTT broker that can be used on any platform to mediate messages between client. To get started some tools are required. The first step is to install a local broker application.
+				</div>
+				<div style="margin-top: 10px">
+					<ul>
+						<li style="margin-top: 10px">
+						First install the OpenSSL implementation for Windows <a href="resources/Win32OpenSSL_Light-1_1_0g.exe">here</a>.
+							<ul>
+								<li style="margin-top: 2px">Install the Client and navigate to the installation folder.</li>
+								<li style="margin-top: 2px">Access the 'bin' folder and keep the folder open, e.g. 'C:\OpenSSL-Win32\bin'.</li>
+							</ul>
+						</li>
+						<li style="margin-top: 10px">
+						Download the Mosquitto Client for Windows <a href="resources/mosquitto-1.4.14-install-win32.exe">here</a>.
+							<ul>
+								<li style="margin-top: 2px">Install the Mosquitto application.</li>
+								<li style="margin-top: 2px">Navigate to the installation folder, e.g. 'C:\Program Files (x86)\mosquitto'.</li>
+								<li style="margin-top: 2px">Copy all DLL files from the 'bin' folder in OpenSLL to the Mosquitto installation directory.</li>
+							</ul>
+						</li>
+						<li style="margin-top: 10px">
+						Finally we need to copy some additional mandatory DLL files to make mosquitto run on Windows. All files have to be saved into the Mosquitto installation directory, e.g. 'C:\Program Files (x86)\mosquitto'.
+							<ul>
+								<li style="margin-top: 2px">Download 'libeay32.dll' <a href="resources/libeay32.dll">here</a>.</li>
+								<li style="margin-top: 2px">Download 'pthreadVC2.dll' <a href="resources/pthreadVC2.dll">here</a>.</li>
+								<li style="margin-top: 2px">Download 'ssleay32.dll' <a href="resources/ssleay32.dll">here</a>.</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				
 			</div>
         </div>
       </div>
@@ -226,8 +263,8 @@
         <div class="row">
           <div class="col-md-4 mb-5 mb-lg-0">
             <h4 class="text-uppercase mb-4">Location</h4>
-            <p class="lead mb-0">2215 John Daniel Drive
-              <br>Clark, MO 65243</p>
+            <p class="lead mb-0">Dennewartstr. 27
+              <br>52068 Aachen, Germany</p>
           </div>
           <div class="col-md-4 mb-5 mb-lg-0">
             <h4 class="text-uppercase mb-4">Around the Web</h4>
@@ -260,9 +297,8 @@
             </ul>
           </div>
           <div class="col-md-4">
-            <h4 class="text-uppercase mb-4">About Freelancer</h4>
-            <p class="lead mb-0">Freelance is a free to use, open source Bootstrap theme created by
-              <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
+            <h4 class="text-uppercase mb-4">About this Page</h4>
+            <p class="lead mb-0">Industry 4.0 Course is a platform created for the participants of my Seminars.</p>
           </div>
         </div>
       </div>
@@ -270,7 +306,7 @@
 
     <div class="copyright py-4 text-center text-white">
       <div class="container">
-        <small>Copyright &copy; Your Website 2018</small>
+        <small>Copyright &copy; Max Hoffmann - 2018</small>
       </div>
     </div>
 
