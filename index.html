@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Data Analytics</title>
+    <title>Industry 4.0!</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -22,7 +22,7 @@
     <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
 
     <!-- Custom styles for this template -->
-    <link href="css/freelancer.css" rel="stylesheet">
+    <link href="css/freelancer.min.css" rel="stylesheet">
 
   </head>
 
@@ -31,22 +31,24 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Data Analytics for I4.0</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Home</a>
         <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item mx-0 mx-lg-1">
+			<li class="nav-item mx-0 mx-lg-1">
               <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Material</a>
             </li>
             <li class="nav-item mx-0 mx-lg-1">
               <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
             </li>
+			<!--
             <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#copyright">Info</a>
-            </li>
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a>
+           z  </li>
+			-->
           </ul>
         </div>
       </div>
@@ -58,160 +60,313 @@
         <img class="img-fluid mb-5 d-block mx-auto" src="img/profile.png" alt="">
         <h1 class="text-uppercase mb-0">Getting Ready for Industry 4.0!</h1>
         <hr class="star-light">
-        <h2 class="font-weight-light mb-0">Data Mining, Analytics and Cloud Computing</h2>
+        <h2 class="font-weight-light mb-0">Basics - Development - Benefits</h2>
       </div>
     </header>
 	
+	<!-- Material -->
 	<section class="portfolio" id="portfolio">
       <div class="container">
         <h2 class="text-center text-uppercase text-secondary mb-0">Material</h2>
         <hr class="star-dark mb-5">
         <div class="row">
 			<div class="col-xs-8 max-auto" style="margin-left: 14px">
-				
-				<h3> 
-					Data Science with Python
+				<h3>
+					Java Programming
 				</h3>
 				<h5>
-					Python executables and Conda Environment
-				</h5>
-				 <div>
-                    If you do not have any python installation, please download and install <a target="_blank" href="https://conda.io/miniconda.html"> the conda package </a>. Please select the Python 3.6 for the system you are using.
-                </div>
-                <h5>
-					The PyCharm IDE
+					The Eclipse IDE
 				</h5>
 				<div>
-					If you didn't install the PyCharm IDE so far, please download the PyCharm Community Edition from <a target="_blank" href="https://www.jetbrains.com/pycharm/download/#section=windows">here</a>.
-				</div>                
-				<h5>
-					Development in Python
-				</h5>
-				<div>
-					The Python Programming language is easy to use. If you are not familiar with the syntax or would like to check about a specific command, please feel free to use one the various tutorials or resources, e.g. <a target="_blank" href="https://docs.python.org/3/tutorial/">this</a> here.
+					If you didn't install the Eclipse Java IDE so far, please download from <a target="_blank" href="http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/oxygen/3a/eclipse-java-oxygen-3a-win32-x86_64.zip">here</a>.
 				</div>
+				<h3 style="margin-top: 20px">
+					Getting Started with MQTT
+				</h3>
 				
+				<!-- 
 				<h5>
-					Additional Tools
+					Mosquitto
 				</h5>
+				
 				<div>
-					The following tools can help you by accessing and understanding databases:
+					Mosquitto is a free and light-weight MQTT broker that can be used on any platform to mediate messages between client. To get started some tools are required. The first step is to install a local broker application. In order to do so, please perform the following steps:
+				</div>
+				<div style="margin-top: 10px">
 					<ul>
-					<li>MySQL: <a target="_blank" href="https://www.heidisql.com/download.php">Heidi SQL</a>
-					<li>MongoDB: <a target="_blank" href="https://robomongo.org/download">RoboMongo Robo 3T</a>
-					<li>SQLite: <a target="_blank" href="http://sqlitebrowser.org/">SQLite Database Browser</a>
+						<li style="margin-top: 10px">
+						First install the OpenSSL implementation for Windows <a href="resources/Win32OpenSSL_Light-1_1_0g.exe">here</a>.
+							<ul>
+								<li style="margin-top: 2px">Install the Client and navigate to the installation folder.</li>
+								<li style="margin-top: 2px">Access the 'bin' folder and keep the folder open, e.g. 'C:\OpenSSL-Win32\bin'.</li>
+							</ul>
+						</li>
+						<li style="margin-top: 10px">
+						Download the Mosquitto Client for Windows <a href="resources/mosquitto-1.4.14-install-win32.exe">here</a>.
+							<ul>
+								<li style="margin-top: 2px">Install the Mosquitto application.</li>
+								<li style="margin-top: 2px">Navigate to the installation folder, e.g. 'C:\Program Files (x86)\mosquitto'.</li>
+								<li style="margin-top: 2px">Copy all DLL files from the 'bin' folder in OpenSLL to the Mosquitto installation directory.</li>
+							</ul>
+						</li>
+						<li style="margin-top: 10px">
+						Finally we need to copy some additional mandatory DLL files to make mosquitto run on Windows. All files have to be saved into the Mosquitto installation directory, e.g. 'C:\Program Files (x86)\mosquitto'.
+							<ul>
+								<li style="margin-top: 2px">Download 'libeay32.dll' <a href="resources/libeay32.dll">here</a>.</li>
+								<li style="margin-top: 2px">Download 'pthreadVC2.dll' <a href="resources/pthreadVC2.dll">here</a>.</li>
+								<li style="margin-top: 2px">Download 'ssleay32.dll' <a href="resources/ssleay32.dll">here</a>.</li>
+							</ul>
+						</li>
 					</ul>
 				</div>
-				<h5>Practical Exercise: Python and Databases</h5>
 				<div>
-					Please find the initial Python script for database connections <a target="_blank" href="resources/Day1/01 - Hands on Databases with Python/databases.py">here</a>.
+					Finally we are able to start a local Mosquitto service on our computer:
 				</div>
-				<!--
 				<div>
-					You can find the solution for the Python Database task <a target="_blank" href="resources/Day1/01 - Hands on Databases with Python/databases_completed.py">here</a>.
+					<ul>
+						<li style="margin-top: 6px">Open the Windows Command Line</li>
+						<li style="margin-top: 6px">Navigate to the 'Mosquitto' installation directory.</li>
+						<li style="margin-top: 6px">Start the 'Mosquitto' service by typing "mosquitto" and press Enter.</li>
+						<li style="margin-top: 6px">If no error occurs a local MQTT broker will be available under 'tcp://localhost:1883'.</li>
+					</ul>
 				</div>
+				
 				-->
-				<div>
-					Please find the SQLite Database Dumb <a target="_blank" href="resources/Day1/01 - Hands on Databases with Python/persons.db">here</a>
-				</div>
-				
-				<h5>The Pandas Library</h5>
-				<div>
-					Data Science with Python is a lot about programming with Pandas because of the scalable data structures that can be used. Please find useful information and basic knowledge about the Pandas library <a target="_blank" href="https://www.tutorialspoint.com/python_pandas/index.htm">here</a>.
-				</div>
-				
-				<h3>
-					Knowledge Discovery in Databases (KDD) and Data Mining
-				</h3>
-				<h5>
-					RapidMiner Studio
-				</h5>
-				<div>
-					If you didn't install the RapidMiner so far, please Version 8.1 from  <a target="_blank" href="https://my.rapidminer.com/nexus/account/index.html#downloads">here</a> and register yourself..
-				</div>
-				
-				<h5>Practical Exercise: RapidMiner</h5>
-				<div style="margin-bottom: 10px">
-					As a first example for Data Mining, we will use data that is connected to the use-case, which you practiced in the previous seminar (gear shaft production).<br> Please find the according data set <a target="_blank" href="/resources/Day1/02 - Hands On RapidMiner/SummerSchools_Dataset.csv">here</a>.
-				</div>
-				<div>
-					Please find the example data sets for the IRIS use-case <a target="_blank" href="/resources/Day1/02 - Hands On RapidMiner/iris.csv">here</a> (small) and <a target="_blank" href="resources/Day1/02 - Hands On RapidMiner/vgsales.csv">here</a> (larger).
-				</div>
-				
-				<h3>
-					Data Types
-				</h3>
 				
 				<h5>
-					Practical Exercise: Explore Data Set
+					Implementing the MQTT application
 				</h5>
-				
-				<div>
-					You can download the exercise data sets as <a target="_blank" href="resources/Day2/01 Data Types/car_sales_headless.csv">CSV</a> or as <a target="_blank" href="resources/Day2/01 Data Types/car_sales_headless.xlsx">Excel</a> File.
-				</div>
-				
-				<h3>
-					Notebook in Clouds
-				</h3>
-				
-				<div>
-					Please download a iris data set that contains column names <a target="_blank" href="resources/Day3/iris.csv">here</a>.
-				</div>
-				<div>
-					You can find an example Jupyter Notebook for the Iris Dataset <a target="_blank" href="resources/Day3/IrisAnalysis.ipynb">here</a>
-				</div>
-				
-				<h3>
-					Machine Learning
-				</h3>
-					
-				<h5>
-					Regression
-				</h5>
-				
-				<div>
-					Please find the first Notebook for Regression <a target="_blank" href="resources/Day4/Regression-Concrete.ipynb">here</a>
-					Please find the second Notebook for Regression <a target="_blank" href="resources/Day4/Regression-Diabetes.ipynb">here</a>
-				</div>
-				
-				<h5>
-					Classification
-				</h5>
-					Please find the Notebook for Classification <a target="_blank" href="resources/Day4/Classification-Occupancy.ipynb">here</a>
-					Please find the Data Sets for Classification below:
+				<div style="margin-top: 10px">
 					<ul>
-					<li><a target="_blank" href="resources/Day4/datatraining-Occupancy.csv">Training Data</a>
-					<li><a target="_blank" href="resources/Day4/datatest-Occupancy.csv">Test Data 1</a>
-					<li><a target="_blank" href="resources/Day4/datatest2-Occupancy.csv">Test Data 2</a>
+						<li style="margin-top: 10px">Start the Eclipse application and follow the tutorial.</li>
+						<li style="margin-top: 10px">In the case the Maven Plugin in Eclipse is not reachable, please download the MQTT client for Java from here <a href="resources/org.eclipse.paho.client.mqttv3-1.2.0.jar">here</a>.</li>
+						<li style="margin-top: 10px">Manually add the library to your project using the "Build Path..." configuration of the Eclipse project.</li>
+						<li>
+						"<dependency>
+							<groupId>org.eclipse.paho</groupId>
+							<artifactId>org.eclipse.paho.client.mqttv3</artifactId>
+							<version>1.2.0</version>
+						</dependency>"
+						</li>
 					</ul>
-				<div>
-				
-				</div>
-				
-				<h5>
-					Clustering
-				</h5>
-				
-				<div>
-					Please find the Data Set for Clustering <a target="_blank" href="resources/Day4/clustering.csv">here</a>
-				<div>
 				</div>
 				<h5>
-					Deeplearning
+					Demo Application for MQTT
 				</h5>
+				<div style="margin-top: 10px">
+					<ul>
+						<li style="margin-top: 10px">Access the HiveMQ MQTT Dashboard <a target="_blank" href="http://www.mqtt-dashboard.com/">here</a>.</li>
+						<li style="margin-top: 10px">Open the Websocket Client <a target="_blank" href="http://www.hivemq.com/demos/websocket-client/">here</a>.</li>
+						<li style="margin-top: 10px">Connect to the Default MQTT Broker, which is already selected</li>
+						<li style="margin-top: 10px">Subscribe to a new topic to receive messages from publishers</li>	
+					</ul>
+				</div>
+				<h3 style="margin-top: 20px">
+					Creating JSON String from Java Objects and back
+				</h3>
+				<div style="margin-top: 10px">
+					Please refer to this <a target="_blank" href="https://www.mkyong.com/java/jackson-2-convert-java-object-to-from-json/">link</a> to find out how to convert an instance of a Java Object to a JSON and how to transfer a JSON String back into a Java Object.
+				</div>
 				
+				
+				<h5 style="margin-top: 20px">
+					PLC Exercise
+				</h5>
+				<div style="margin-top: 10px">
+					<ul>
+						<li style="margin-top: 10px">Download the PLC Exercise <a target="_blank" href="resources/Exercise_PLC.pdf">here</a>.</li>
+					</ul>
+				</div>
+				
+				<h3 style="margin-top: 20px">
+					The Node-RED environment
+				</h3>
+				<h5>
+					How to get started
+				</h5>
+				<div style="margin-top: 10px">
+					<ul>
+						<li style="margin-top: 10px">Download nodeJS from <a target="_blank" href="resources/node-v8.11.2-x64.msi">here</a>.</li>
+						<li style="margin-top: 10px">After nodeJS has been successfully installed, open the command line:</li>
+						<code>cmd.exe</code>
+						<li style="margin-top: 10px">Please check the version of the installation now:</li>
+						<code>node --version && npm --version</code><br>
+						Something like the following should appear:<br>
+						<code>
+							v8.9.0<br>
+							5.5.1
+						</code>
+						<li style="margin-top: 10px">Now install Node-RED from command line:</li>
+						<code>
+							npm install -g --unsafe-perm node-red
+						</code>
+						<li style="margin-top: 10px">Finally, after successful installation, please start Node-RED with the following command:</li>
+						<code>
+							node-red
+						</code>
+					</ul>
+				</div>
+				
+				<h3 style="margin-top: 20px">
+					Getting Started with OPC UA
+				</h3>
+				
+				<h5 style="margin-top: 20px">
+					OPC UA Modeling and Client Software
+				</h5>
+				<div style="margin-top: 10px">
+					<ul>
+						<li style="margin-top: 10px">In order to make use of OPC UA Modeling and to browse the respective UA Models, some software needs to be installed.</li>	
+						<li style="margin-top: 10px">To develop information models, the "UaModeler" is needed. If not already installed, please download and install from <a href="resources/uamodeler-bin-win32-x86-vs2008sp1-v1.4.3-352.exe">here</a>.</li>
+						<li style="margin-top: 10px">To browse OPC UA Servers, a Client application is needed. Please download and install the "UaExpert" from <a href="resources/uaexpert-bin-win32-x86-vs2008sp1-v1.4.2-256.exe">here</a>.</li>
+					</ul>
+				</div>
+				
+				<h5 style="margin-top: 20px">
+					Java OPC UA Client and Server SDK
+				</h5>
+				<div style="margin-top: 10px">
+					<ul>
+						<li style="margin-top: 10px">Please download the Evaluation Package of the OPC UA Java implementation from <a href="resources/ProSys-Eval-2.2.2.zip">here</a>.</li>
+						<li style="margin-top: 10px">Unzip the Libraries from the archive.</li>	
+						<li style="margin-top: 10px">Create a new project, e.g. "MyOpcUaServer".</li>	
+						<li style="margin-top: 10px">Add the libraries to the Build Path of your project.</li>	
+					</ul>
+				</div>
+				
+				<h5 style="margin-top: 20px">
+					Implementation of an OPC UA Server using Eclipse
+				</h5>
+				<div style="margin-top: 10px">
+					<ul>
+						<li style="margin-top: 10px">Please follow the instructions from the tutorial available from <a  target="_blank" href="resources/Prosys_OPC_UA_Java_SDK_Server_Tutorial.pdf">here</a>.</li>
+					</ul>
+				</div>
+				
+				<h3 style="margin-top: 20px">
+					Setting up your Ubuntu for ROS
+				</h3>
+				<div style="margin-top: 10px">
+					<ul>
+						<li style="margin-top: 10px">Please follow the instructions on the following <a  target="_blank" href="http://wiki.ros.org/kinetic/Installation/Ubuntu">webpage</a>.</li>
+					</ul>
+					<ul>
+						<li style="margin-top: 10px">Please also refer to the installation instructions provided <a  target="_blank" href="https://philippente.github.io/docs/installation.html">here</a>.</li>
+					</ul>
+					<ul>
+						<li style="margin-top: 10px">Please install PyCharm IDE for Python Development from <a  target="_blank" href="https://www.jetbrains.com/pycharm/download/download-thanks.html?platform=linux&code=PCC">here</a>.</li>
+					</ul>
+				</div>
+<!--
 				<div>
-					Please find the notebook for Deeplearning <a target="_blank" href="resources/Day4/Classification-MNIST-NN.ipynb">here</a>
-				<div>
-				</div>	
-					
-					
-		</div>
-	  </div>
-	</section>
+					Example Solution for the OPC UA Server
+					<pre class="pre-scrollable">
+						<code>
+package rwth.ima.opc.ua;
 
-    <!-- Portfolio Grid Section
-    <section class="portfolio" id="portfolio">
+import java.io.File;
+import java.io.IOException;
+import java.net.URISyntaxException;
+import java.nio.file.Paths;
+import java.security.Security;
+import java.util.Locale;
+
+import org.opcfoundation.ua.builtintypes.LocalizedText;
+import org.opcfoundation.ua.core.ApplicationDescription;
+import org.opcfoundation.ua.core.ApplicationType;
+import org.opcfoundation.ua.core.UserTokenPolicy;
+import org.opcfoundation.ua.transport.security.SecurityMode;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.xml.sax.SAXException;
+
+import com.prosysopc.ua.*;
+import com.prosysopc.ua.server.UaServer;
+import com.prosysopc.ua.server.UaServerException;
+
+public class MyUaServer {
+
+    private static UaServer uaServer;
+
+    private static final Logger LOGGER = LoggerFactory.getLogger(MyUaServer.class);
+
+    public static void main(String[] args) throws ModelException, IOException, SAXException, URISyntaxException, UaServerException, IllegalAccessException {
+        uaServer = new UaServer();
+
+        String applicationName = "appName";
+        int port = 12345;
+
+        Security.addProvider(new org.bouncycastle.jce.provider.BouncyCastleProvider());
+
+        String pkiFilePath = Paths.get(".", "PKI", "CA").toString();
+        LOGGER.info("Using PKI File path: " + pkiFilePath);
+        final PkiFileBasedCertificateValidator validator = new PkiFileBasedCertificateValidator(pkiFilePath);
+        uaServer.setCertificateValidator(validator);
+        
+        // *** Application Description is sent to the clients
+        ApplicationDescription appDescription = new ApplicationDescription();
+        appDescription.setApplicationName(new LocalizedText(applicationName, Locale.ENGLISH));
+        appDescription.setApplicationUri("http://ima.rwth-aachen.de/OPCUA");
+        appDescription.setProductUri("urn:ima.rwth-aachen.de:UA:" + applicationName);
+        appDescription.setApplicationType(ApplicationType.Server);
+
+        final ApplicationIdentity identity;
+        File privatePath = new File(validator.getBaseDir(), "private");
+        try {
+            // Creating public / private certificate for verifying identity
+            identity = ApplicationIdentity.loadOrCreateCertificate(appDescription, "IMA", "opcua", privatePath, true);
+            uaServer.setApplicationIdentity(identity);
+            uaServer.setSecurityModes(SecurityMode.ALL);
+
+            // Define the supported user Token policies
+            uaServer.addUserTokenPolicy(UserTokenPolicy.ANONYMOUS);
+            uaServer.addUserTokenPolicy(UserTokenPolicy.SECURE_CERTIFICATE);
+
+            // setting the port on which the server is listening
+            uaServer.setPort(UaApplication.Protocol.OpcTcp, port);
+
+
+            uaServer.setServerName(applicationName);
+
+            uaServer.init();
+        } catch (SecureIdentityException e) {
+            LOGGER.warn("pt: SecurityIdentityException");
+            LOGGER.error("Exception", e);
+        } catch (IOException e) {
+            LOGGER.warn("pt: IOException");
+            LOGGER.error("Exception", e);
+        } catch (UaServerException e) {
+            LOGGER.warn("pt: UaServerException");
+            LOGGER.error("Exception", e);
+        }
+
+        MyUaServer modelLoader = new MyUaServer();
+        modelLoader.loader();
+        
+        System.out.println(uaServer.getNamespaceTable().toString());
+        
+        uaServer.init();
+        uaServer.start();
+    }
+
+    public void loader() throws URISyntaxException, ModelException, SAXException, IOException, IllegalAccessException {
+        uaServer.getAddressSpace().loadModel(getClass().getResource("gearshaft.xml").toURI());
+    }
+
+}
+						</code>
+					</pre>
+				</div>
+-->
+				
+			</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Grid Section -->
+    <!--
+	<section class="portfolio" id="portfolio">
       <div class="container">
         <h2 class="text-center text-uppercase text-secondary mb-0">Portfolio</h2>
         <hr class="star-dark mb-5">
@@ -279,7 +434,6 @@
         </div>
       </div>
     </section>
-	
 	-->
 
     <!-- About Section -->
@@ -289,10 +443,10 @@
         <hr class="star-light mb-5">
         <div class="row">
           <div class="col-lg-4 ml-auto">
-            <p class="lead">Are you ready for modern data analytics in the Industry 4.0? This course provides basics on various technologies Data Analytics, such as Data Mining, Machine Learning and Big Data Technologies.</p>
+            <p class="lead">Are you ready for the Industry 4.0? This course intends to provide the basics on various technologies around the (Industrial) Internet of Things (IoT), Machine-to-Machine Communication and Industrial Standards.</p>
           </div>
           <div class="col-lg-4 mr-auto">
-            <p class="lead">This page provides basic materials to get started with Data Analytics in I4.0. The tools and example are either based on open source or demo versions of commercially available software.</p>
+            <p class="lead">This page provides basic materials and resources to get started with Industry 4.0. The tools and programming example are either based on open source software or demo version of commercially available software.</p>
           </div>
         </div>
         <!--
@@ -306,13 +460,16 @@
       </div>
     </section>
 
-    <!-- Contact Section 
+    <!-- Contact Section -->
+	<!--
     <section id="contact">
       <div class="container">
         <h2 class="text-center text-uppercase text-secondary mb-0">Contact Me</h2>
         <hr class="star-dark mb-5">
         <div class="row">
           <div class="col-lg-8 mx-auto">
+            // To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19.
+            // The form should work on most web servers, but if the form is not working you may need to configure your web server differently.
             <form name="sentMessage" id="contactForm" novalidate="novalidate">
               <div class="control-group">
                 <div class="form-group floating-label-form-group controls mb-0 pb-2">
@@ -353,7 +510,7 @@
       </div>
     </section>
 	-->
-	
+
     <!-- Footer -->
     <footer class="footer text-center">
       <div class="container">
@@ -395,14 +552,14 @@
           </div>
           <div class="col-md-4">
             <h4 class="text-uppercase mb-4">About this Page</h4>
-            <p class="lead mb-0">This platform is created for the participants of my Seminars.</p>
+            <p class="lead mb-0">Industry 4.0 Course is a platform created for the participants of my Seminars.</p>
           </div>
         </div>
       </div>
     </footer>
 
     <div class="copyright py-4 text-center text-white">
-      <div class="container" id="copyright">
+      <div class="container">
         <small>Copyright &copy; Max Hoffmann - 2018</small>
       </div>
     </div>
@@ -413,136 +570,6 @@
         <i class="fa fa-chevron-up"></i>
       </a>
     </div>
-
-    <!-- Portfolio Modals
-
-    <div class="portfolio-modal mfp-hide" id="portfolio-modal-1">
-      <div class="portfolio-modal-dialog bg-white">
-        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-          <i class="fa fa-3x fa-times"></i>
-        </a>
-        <div class="container text-center">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
-              <hr class="star-dark mb-5">
-              <img class="img-fluid mb-5" src="img/portfolio/cabin.png" alt="">
-              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                <i class="fa fa-close"></i>
-                Close Project</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="portfolio-modal mfp-hide" id="portfolio-modal-2">
-      <div class="portfolio-modal-dialog bg-white">
-        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-          <i class="fa fa-3x fa-times"></i>
-        </a>
-        <div class="container text-center">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
-              <hr class="star-dark mb-5">
-              <img class="img-fluid mb-5" src="img/portfolio/cake.png" alt="">
-              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                <i class="fa fa-close"></i>
-                Close Project</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="portfolio-modal mfp-hide" id="portfolio-modal-3">
-      <div class="portfolio-modal-dialog bg-white">
-        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-          <i class="fa fa-3x fa-times"></i>
-        </a>
-        <div class="container text-center">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
-              <hr class="star-dark mb-5">
-              <img class="img-fluid mb-5" src="img/portfolio/circus.png" alt="">
-              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                <i class="fa fa-close"></i>
-                Close Project</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="portfolio-modal mfp-hide" id="portfolio-modal-4">
-      <div class="portfolio-modal-dialog bg-white">
-        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-          <i class="fa fa-3x fa-times"></i>
-        </a>
-        <div class="container text-center">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
-              <hr class="star-dark mb-5">
-              <img class="img-fluid mb-5" src="img/portfolio/game.png" alt="">
-              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                <i class="fa fa-close"></i>
-                Close Project</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="portfolio-modal mfp-hide" id="portfolio-modal-5">
-      <div class="portfolio-modal-dialog bg-white">
-        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-          <i class="fa fa-3x fa-times"></i>
-        </a>
-        <div class="container text-center">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
-              <hr class="star-dark mb-5">
-              <img class="img-fluid mb-5" src="img/portfolio/safe.png" alt="">
-              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                <i class="fa fa-close"></i>
-                Close Project</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="portfolio-modal mfp-hide" id="portfolio-modal-6">
-      <div class="portfolio-modal-dialog bg-white">
-        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-          <i class="fa fa-3x fa-times"></i>
-        </a>
-        <div class="container text-center">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
-              <hr class="star-dark mb-5">
-              <img class="img-fluid mb-5" src="img/portfolio/submarine.png" alt="">
-              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                <i class="fa fa-close"></i>
-                Close Project</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-	
-	-->
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
