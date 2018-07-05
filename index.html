@@ -168,10 +168,14 @@
 					Please refer to this <a target="_blank" href="https://www.mkyong.com/java/jackson-2-convert-java-object-to-from-json/">link</a> to find out how to convert an instance of a Java Object to a JSON and how to transfer a JSON String back into a Java Object.
 				</div>
 				
+				<!-- 
 				
 				<h5 style="margin-top: 20px">
 					PLC Exercise
 				</h5>
+				
+				-->
+				
 				<div style="margin-top: 10px">
 					<ul>
 						<li style="margin-top: 10px">Download the PLC Exercise <a target="_blank" href="resources/Exercise_PLC.pdf">here</a>.</li>
@@ -193,8 +197,8 @@
 						<code>node --version && npm --version</code><br>
 						Something like the following should appear:<br>
 						<code>
-							v8.9.0<br>
-							5.5.1
+							v8.9.4<br>
+							6.1.0
 						</code>
 						<li style="margin-top: 10px">Now install Node-RED from command line:</li>
 						<code>
@@ -206,6 +210,50 @@
 						</code>
 					</ul>
 				</div>
+				
+				<h5>
+					OpenWeatherMap example
+				</h5>
+				
+				<div style="margin-top: 10px">
+					<ul>
+						<li>Please find below the API key for accessing automated weather data through OpenWeatherMap</li>
+						<code>
+							2a198f8aa465474034de4ad7ae4d8d98
+						</code>
+					</ul>
+				</div>
+				
+				<h5>
+					Set up Node-RED on your Raspberry Pi
+				</h5>
+				
+				<div style="margin-top: 10px">
+					<ul>
+						<li>Connect to the Raspberry Pi via VNC viewer, please download the software from <a target="_blank" href="https://www.realvnc.com/download/viewer/">here</a>.</li>
+						<li style="margin-top: 10px">Install NodeJS:</li>
+						<code>
+							sudo apt-get install nodejs
+						</code>
+						<li style="margin-top: 10px">Install npm</li>
+						<code>
+							sudo apt-get install npm
+						</code>
+						<li style="margin-top: 10px">Run the following command in your terminal window:</li>
+						<code>
+							bash <(curl -sL https://raw.githubusercontent.com/node-red/raspbian-deb-package/master/resources/update-nodejs-and-nodered)
+						</code>
+						<li style="margin-top: 10px">Start the Node-RED server with the following command:</li>
+						<code>
+							node-red-start
+						</code>
+					</ul>
+				</div>
+				
+				
+				
+				
+				<!--
 				
 				<h3 style="margin-top: 20px">
 					Getting Started with OPC UA
@@ -257,7 +305,11 @@
 						<li style="margin-top: 10px">Please install PyCharm IDE for Python Development from <a  target="_blank" href="https://www.jetbrains.com/pycharm/download/download-thanks.html?platform=linux&code=PCC">here</a>.</li>
 					</ul>
 				</div>
-<!--
+				
+				-->
+				
+				<!--
+				
 				<div>
 					Example Solution for the OPC UA Server
 					<pre class="pre-scrollable">
@@ -357,7 +409,8 @@ public class MyUaServer {
 						</code>
 					</pre>
 				</div>
--->
+			
+				-->
 				
 			</div>
         </div>
