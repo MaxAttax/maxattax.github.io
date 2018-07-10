@@ -22,7 +22,7 @@
     <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
 
     <!-- Custom styles for this template -->
-    <link href="css/freelancer.min.css" rel="stylesheet">
+    <link href="css/freelancer.css" rel="stylesheet">
 
   </head>
 
@@ -80,7 +80,7 @@
 				<div>
 					If you didn't install the Eclipse Java IDE so far, please download from <a target="_blank" href="http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/oxygen/3a/eclipse-java-oxygen-3a-win32-x86_64.zip">here</a>.
 				</div>
-				<h3 style="margin-top: 20px">
+				<h3>
 					Getting Started with MQTT
 				</h3>
 				
@@ -94,14 +94,14 @@
 				</div>
 				<div style="margin-top: 10px">
 					<ul>
-						<li style="margin-top: 10px">
+						<li>
 						First install the OpenSSL implementation for Windows <a href="resources/Win32OpenSSL_Light-1_1_0g.exe">here</a>.
 							<ul>
 								<li style="margin-top: 2px">Install the Client and navigate to the installation folder.</li>
 								<li style="margin-top: 2px">Access the 'bin' folder and keep the folder open, e.g. 'C:\OpenSSL-Win32\bin'.</li>
 							</ul>
 						</li>
-						<li style="margin-top: 10px">
+						<li>
 						Download the Mosquitto Client for Windows <a href="resources/mosquitto-1.4.14-install-win32.exe">here</a>.
 							<ul>
 								<li style="margin-top: 2px">Install the Mosquitto application.</li>
@@ -109,7 +109,7 @@
 								<li style="margin-top: 2px">Copy all DLL files from the 'bin' folder in OpenSLL to the Mosquitto installation directory.</li>
 							</ul>
 						</li>
-						<li style="margin-top: 10px">
+						<li>
 						Finally we need to copy some additional mandatory DLL files to make mosquitto run on Windows. All files have to be saved into the Mosquitto installation directory, e.g. 'C:\Program Files (x86)\mosquitto'.
 							<ul>
 								<li style="margin-top: 2px">Download 'libeay32.dll' <a href="resources/libeay32.dll">here</a>.</li>
@@ -138,9 +138,9 @@
 				</h5>
 				<div style="margin-top: 10px">
 					<ul>
-						<li style="margin-top: 10px">Start the Eclipse application and follow the tutorial.</li>
-						<li style="margin-top: 10px">In the case the Maven Plugin in Eclipse is not reachable, please download the MQTT client for Java from here <a href="resources/org.eclipse.paho.client.mqttv3-1.2.0.jar">here</a>.</li>
-						<li style="margin-top: 10px">Manually add the library to your project using the "Build Path..." configuration of the Eclipse project.</li>
+						<li>Start the Eclipse application and follow the tutorial.</li>
+						<li>In the case the Maven Plugin in Eclipse is not reachable, please download the MQTT client for Java from here <a href="resources/org.eclipse.paho.client.mqttv3-1.2.0.jar">here</a>.</li>
+						<li>Manually add the library to your project using the "Build Path..." configuration of the Eclipse project.</li>
 						<li>
 						"<dependency>
 							<groupId>org.eclipse.paho</groupId>
@@ -155,34 +155,28 @@
 				</h5>
 				<div style="margin-top: 10px">
 					<ul>
-						<li style="margin-top: 10px">Access the HiveMQ MQTT Dashboard <a target="_blank" href="http://www.mqtt-dashboard.com/">here</a>.</li>
-						<li style="margin-top: 10px">Open the Websocket Client <a target="_blank" href="http://www.hivemq.com/demos/websocket-client/">here</a>.</li>
-						<li style="margin-top: 10px">Connect to the Default MQTT Broker, which is already selected</li>
-						<li style="margin-top: 10px">Subscribe to a new topic to receive messages from publishers</li>	
+						<li>Access the HiveMQ MQTT Dashboard <a target="_blank" href="http://www.mqtt-dashboard.com/">here</a>.</li>
+						<li>Open the Websocket Client <a target="_blank" href="http://www.hivemq.com/demos/websocket-client/">here</a>.</li>
+						<li>Connect to the Default MQTT Broker, which is already selected</li>
+						<li>Subscribe to a new topic to receive messages from publishers</li>	
 					</ul>
-				</div>
-				<h3 style="margin-top: 20px">
-					Creating JSON String from Java Objects and back
-				</h3>
-				<div style="margin-top: 10px">
-					Please refer to this <a target="_blank" href="https://www.mkyong.com/java/jackson-2-convert-java-object-to-from-json/">link</a> to find out how to convert an instance of a Java Object to a JSON and how to transfer a JSON String back into a Java Object.
 				</div>
 				
 				<!-- 
 				
-				<h5 style="margin-top: 20px">
+				<h5>
 					PLC Exercise
 				</h5>
 				
-				-->
-				
 				<div style="margin-top: 10px">
 					<ul>
-						<li style="margin-top: 10px">Download the PLC Exercise <a target="_blank" href="resources/Exercise_PLC.pdf">here</a>.</li>
+						<li>Download the PLC Exercise <a target="_blank" href="resources/Exercise_PLC.pdf">here</a>.</li>
 					</ul>
 				</div>
 				
-				<h3 style="margin-top: 20px">
+				-->
+				
+				<h3>
 					The Node-RED environment
 				</h3>
 				<h5>
@@ -190,21 +184,21 @@
 				</h5>
 				<div style="margin-top: 10px">
 					<ul>
-						<li style="margin-top: 10px">Download nodeJS from <a target="_blank" href="resources/node-v8.11.2-x64.msi">here</a>.</li>
-						<li style="margin-top: 10px">After nodeJS has been successfully installed, open the command line:</li>
+						<li>Download nodeJS from <a target="_blank" href="resources/node-v8.11.2-x64.msi">here</a>.</li>
+						<li>After nodeJS has been successfully installed, open the command line:</li>
 						<code>cmd.exe</code>
-						<li style="margin-top: 10px">Please check the version of the installation now:</li>
+						<li>Please check the version of the installation now:</li>
 						<code>node --version && npm --version</code><br>
 						Something like the following should appear:<br>
 						<code>
 							v8.9.4<br>
 							6.1.0
 						</code>
-						<li style="margin-top: 10px">Now install Node-RED from command line:</li>
+						<li>Now install Node-RED from command line:</li>
 						<code>
 							npm install -g --unsafe-perm node-red
 						</code>
-						<li style="margin-top: 10px">Finally, after successful installation, please start Node-RED with the following command:</li>
+						<li>Finally, after successful installation, please start Node-RED with the following command:</li>
 						<code>
 							node-red
 						</code>
@@ -231,78 +225,163 @@
 				<div style="margin-top: 10px">
 					<ul>
 						<li>Connect to the Raspberry Pi via VNC viewer, please download the software from <a target="_blank" href="https://www.realvnc.com/download/viewer/">here</a>.</li>
-						<li style="margin-top: 10px">Install NodeJS:</li>
+						<!--
+						<li>Install NodeJS:</li>
 						<code>
 							sudo apt-get install nodejs
 						</code>
-						<li style="margin-top: 10px">Install npm</li>
+						<li>Install npm</li>
 						<code>
 							sudo apt-get install npm
 						</code>
-						<li style="margin-top: 10px">Run the following command in your terminal window:</li>
+						-->
+						<li>Run the following command in your terminal window:</li>
 						<code>
 							bash <(curl -sL https://raw.githubusercontent.com/node-red/raspbian-deb-package/master/resources/update-nodejs-and-nodered)
 						</code>
-						<li style="margin-top: 10px">Start the Node-RED server with the following command:</li>
+						<li>Start the Node-RED server with the following command:</li>
 						<code>
 							node-red-start
 						</code>
 					</ul>
 				</div>
 				
+				<h3>
+					Java Programming with MQTT, JSON and SQLite
+				</h3>
+				<div style="margin-top: 10px">
+					You have already seen how easy it is to set-up an MQTT client with Java. During the next exercises, you will learn how to process the data that comes in through an MQTT topic. For this, will perform the following steps:
+					<ul>
+						<li>Set up the MQTT client to the correct broker.</li>
+						<li>Subscribe to a number of topics that are related to the publishers.</li>
+						<li>Process the MQTT messages (key value pairs as JSON) and extract their data.</li>
+						<li>Use the topics of the incoming MQTT message to find meta-data about the incoming information.</li>
+					</ul>
+				</div>
+				<h5>
+					Creating Java variables from JSON objects
+				</h5>
+				<div style="margin-top: 10px">
+					<ul>
+						<li>
+							Each JSON object has a certain structure. In our example, the JSON object has three values, which are:
+							<ul>
+								<li>Temperature</li>
+								<li>Humidity</li>
+								<li>Pressure</li>
+							</ul>
+						</li>
+						<li>
+							<i>Please create a class with the name <code>MachineData.java</code> and put it in the package <code>rwth.ima.seminar.mqtt</code></i>
+						</li>
+						<li>
+							In order to extract the variables from the underlying JSON structure, a mapping class is required that has the same semantics as the JSON object. Please download the code for an according class <a target="_blank" href="resources/MachineData.java">here</a> and paste it into your project.
+						</li>
+						<li>
+							Please refer to this <a target="_blank" href="https://www.mkyong.com/java/jackson-2-convert-java-object-to-from-json/">link</a> to find out how to convert a JSON String into an instance of a Java Object.
+						</li>
+					</ul>	
+				</div>
 				
+				<h5>
+					Process the MQTT messages according to its topics
+				</h5>
+				<div style="margin-top: 10px">
+					<ul>
+						<li>
+							When we will save the data into the database, we will reserve an extra column for the origin of the data, which might be the name of the machine.
+						</li>
+						<li>
+							In order to find out the origin, the topic of the MQTT message has to be processed by means of its last String after the "/". You do this by making use of the <code>split</code> method in Java, which can be applied to every String.
+						</li>
+						<li>
+							Once you extracted the end of the topic, this String can be saved to a variable with the name <code>machine</code>.
+						</li>
+					</ul>	
+				</div>
+				
+				<h5>
+					Save the data into an SQLite database
+				</h5>
+				<div style="margin-top: 10px">
+					<ul>
+						<li>
+							<i>Please create a class with the name <code>SQLiteJDBCDriverConnection.java</code> and put it in the package <code>rwth.ima.seminar.db</code></i>
+						</li>
+						<li>
+							In order to set-up an SQLite database within your project, you require some Java code. Please download the according code for the SQLite connection and initialization code from <a target="_blank" href="resources/SQLiteJDBCDriverConnection.java">here</a>. 
+						</li>
+						<li>
+							In your Java Main class you set up the database connection like <a target="_blank" href="resources/MqttSubscribe.java">this</a>.
+						</li>
+						<li>
+							If you run your main program afterwards, the "myfactory.db" SQLite database should appear in the root folder of your project.
+						</li>
+					</ul>	
+				</div>
+				
+				<h3>
+					Adding Meta-Data with Node-RED and Consolidation into CSV file
+				</h3>
+				<div style="margin-top: 10px">
+					For solving these tasks, some specialties about Node-RED are important
+					<ul>
+						<li>There is a global context that you can use, e.g. for counter variables. These variables will not be reset after each period of the workflow</li>
+						<li>For the consolidation of data into a CSV file, multiple nodes have to be used: For the CSV Parser and for the File Consolidation</li>	
+					</ul>
+				</div>
 				
 				
 				<!--
 				
-				<h3 style="margin-top: 20px">
+				<h3>
 					Getting Started with OPC UA
 				</h3>
 				
-				<h5 style="margin-top: 20px">
+				<h5>
 					OPC UA Modeling and Client Software
 				</h5>
 				<div style="margin-top: 10px">
 					<ul>
-						<li style="margin-top: 10px">In order to make use of OPC UA Modeling and to browse the respective UA Models, some software needs to be installed.</li>	
-						<li style="margin-top: 10px">To develop information models, the "UaModeler" is needed. If not already installed, please download and install from <a href="resources/uamodeler-bin-win32-x86-vs2008sp1-v1.4.3-352.exe">here</a>.</li>
-						<li style="margin-top: 10px">To browse OPC UA Servers, a Client application is needed. Please download and install the "UaExpert" from <a href="resources/uaexpert-bin-win32-x86-vs2008sp1-v1.4.2-256.exe">here</a>.</li>
+						<li>In order to make use of OPC UA Modeling and to browse the respective UA Models, some software needs to be installed.</li>	
+						<li>To develop information models, the "UaModeler" is needed. If not already installed, please download and install from <a href="resources/uamodeler-bin-win32-x86-vs2008sp1-v1.4.3-352.exe">here</a>.</li>
+						<li>To browse OPC UA Servers, a Client application is needed. Please download and install the "UaExpert" from <a href="resources/uaexpert-bin-win32-x86-vs2008sp1-v1.4.2-256.exe">here</a>.</li>
 					</ul>
 				</div>
 				
-				<h5 style="margin-top: 20px">
+				<h5>
 					Java OPC UA Client and Server SDK
 				</h5>
 				<div style="margin-top: 10px">
 					<ul>
-						<li style="margin-top: 10px">Please download the Evaluation Package of the OPC UA Java implementation from <a href="resources/ProSys-Eval-2.2.2.zip">here</a>.</li>
-						<li style="margin-top: 10px">Unzip the Libraries from the archive.</li>	
-						<li style="margin-top: 10px">Create a new project, e.g. "MyOpcUaServer".</li>	
-						<li style="margin-top: 10px">Add the libraries to the Build Path of your project.</li>	
+						<li>Please download the Evaluation Package of the OPC UA Java implementation from <a href="resources/ProSys-Eval-2.2.2.zip">here</a>.</li>
+						<li>Unzip the Libraries from the archive.</li>	
+						<li>Create a new project, e.g. "MyOpcUaServer".</li>	
+						<li>Add the libraries to the Build Path of your project.</li>	
 					</ul>
 				</div>
 				
-				<h5 style="margin-top: 20px">
+				<h5>
 					Implementation of an OPC UA Server using Eclipse
 				</h5>
 				<div style="margin-top: 10px">
 					<ul>
-						<li style="margin-top: 10px">Please follow the instructions from the tutorial available from <a  target="_blank" href="resources/Prosys_OPC_UA_Java_SDK_Server_Tutorial.pdf">here</a>.</li>
+						<li>Please follow the instructions from the tutorial available from <a  target="_blank" href="resources/Prosys_OPC_UA_Java_SDK_Server_Tutorial.pdf">here</a>.</li>
 					</ul>
 				</div>
 				
-				<h3 style="margin-top: 20px">
+				<h3>
 					Setting up your Ubuntu for ROS
 				</h3>
 				<div style="margin-top: 10px">
 					<ul>
-						<li style="margin-top: 10px">Please follow the instructions on the following <a  target="_blank" href="http://wiki.ros.org/kinetic/Installation/Ubuntu">webpage</a>.</li>
+						<li>Please follow the instructions on the following <a  target="_blank" href="http://wiki.ros.org/kinetic/Installation/Ubuntu">webpage</a>.</li>
 					</ul>
 					<ul>
-						<li style="margin-top: 10px">Please also refer to the installation instructions provided <a  target="_blank" href="https://philippente.github.io/docs/installation.html">here</a>.</li>
+						<li>Please also refer to the installation instructions provided <a  target="_blank" href="https://philippente.github.io/docs/installation.html">here</a>.</li>
 					</ul>
 					<ul>
-						<li style="margin-top: 10px">Please install PyCharm IDE for Python Development from <a  target="_blank" href="https://www.jetbrains.com/pycharm/download/download-thanks.html?platform=linux&code=PCC">here</a>.</li>
+						<li>Please install PyCharm IDE for Python Development from <a  target="_blank" href="https://www.jetbrains.com/pycharm/download/download-thanks.html?platform=linux&code=PCC">here</a>.</li>
 					</ul>
 				</div>
 				
@@ -416,78 +495,6 @@ public class MyUaServer {
         </div>
       </div>
     </section>
-
-    <!-- Portfolio Grid Section -->
-    <!--
-	<section class="portfolio" id="portfolio">
-      <div class="container">
-        <h2 class="text-center text-uppercase text-secondary mb-0">Portfolio</h2>
-        <hr class="star-dark mb-5">
-        <div class="row">
-          <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/cabin.png" alt="">
-            </a>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-2">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/cake.png" alt="">
-            </a>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-3">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/circus.png" alt="">
-            </a>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-4">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/game.png" alt="">
-            </a>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-5">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/safe.png" alt="">
-            </a>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-6">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/submarine.png" alt="">
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-	-->
 
     <!-- About Section -->
     <section class="bg-primary text-white mb-0" id="about">
@@ -605,7 +612,7 @@ public class MyUaServer {
           </div>
           <div class="col-md-4">
             <h4 class="text-uppercase mb-4">About this Page</h4>
-            <p class="lead mb-0">Industry 4.0 Course is a platform created for the participants of my Seminars.</p>
+            <p class="lead mb-0">Industry 4.0 Course is a platform created for the participants of my Seminars on Digital Transformation.</p>
           </div>
         </div>
       </div>
