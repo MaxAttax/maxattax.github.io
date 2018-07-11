@@ -1,0 +1,5 @@
+ObjectMapper objectMapper = new ObjectMapper();
+
+String factoryData = new String(message.getPayload());
+				
+MachineData inMachineData = objectMapper.readValue(factoryData, MachineData.class);
