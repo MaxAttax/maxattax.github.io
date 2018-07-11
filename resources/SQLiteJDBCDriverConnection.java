@@ -20,10 +20,20 @@ public class SQLiteJDBCDriverConnection {
                 + "	pressure real\n"
                 + ");";
         
+        String sql_time = "CREATE TABLE IF NOT EXISTS factoryDataTime (\n"
+                + "	id integer PRIMARY KEY,\n"
+                + "	time text,\n"
+                + "	machine text,\n"
+                + "	temperature real,\n"
+                + "	humidity integer,\n"
+                + "	pressure real\n"
+                + ");";
+        
         try (Connection conn = DriverManager.getConnection(url);
                 Statement stmt = conn.createStatement()) {
             // create a new table
             stmt.execute(sql);
+            stmt.execute(sql_time);
         } catch (SQLException e) {
             System.out.println(e.getMessage());
         }
