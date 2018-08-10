@@ -16,6 +16,12 @@ h6 {
 	font-size: 16pt;
 }
 
+@media screen and (max-width: 480px) {
+	.logo-div {
+		display: none;
+	}
+}
+
 hr.star-light,
 hr.star-dark {
   max-width: 15rem;
@@ -359,6 +365,10 @@ a:focus, a:hover, a:active {
   color: #18BC9C !important;
 }
 
+li {
+	padding-top: 5px;
+}
+
 .text-secondary {
   color: #2C3E50 !important;
 }
@@ -381,4 +391,11 @@ a:focus, a:hover, a:active {
 .btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
   background-color: #1a252f;
   border-color: #1a252f;
+}
+
+
+#over img {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
 }
