@@ -49,9 +49,10 @@ def read_data_mongodb():
 
 
 # Read the content of the SQL Lite File and return as Pandas Data Frame
+# Please make sure that the "persons.db" file is in the same folder as the Python notebook that you are running
 def read_data_sqlite():
     print("Reading out Data with SQL Lite")
-    conn_lite = sqll.connect("material/persons.db")
+    conn_lite = sqll.connect("persons.db")
 
     query = "SELECT * FROM persons;"
 
@@ -165,13 +166,13 @@ def question_5_c(data_frame):
 
 
 if __name__ == '__main__':
-    print("MongoDB Result")
-    dataframe_mongodb = read_data_mongodb()
-    print(dataframe_mongodb)
+    # print("MongoDB Result")
+    # dataframe_mongodb = read_data_mongodb()
+    # print(dataframe_mongodb)
 
-    print("MySQL Result")
-    dataframe_mysql = read_data_mysql()
-    print(dataframe_mysql)
+    # print("MySQL Result")
+    # dataframe_mysql = read_data_mysql()
+    # print(dataframe_mysql)
 
     print("SQLite Results")
     dataframe_sqlite = read_data_sqlite()
