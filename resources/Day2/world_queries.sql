@@ -1,5 +1,8 @@
-SELECT * FROM countrylanguage;
-select * from country;
+# Instructions: Please Configure the Samples & Examples in your MySQL installation
+# Open MySQL workbench and start localhost database
+# Right-click on "world" and click "Set as Default Schema"
+# Open this file in the Query window in the middle by clicking on the blue folder symbol
+
 
 # 1. Which are the 3 countries with the highest population?
 SELECT Name, Population FROM country ORDER BY Population DESC;
