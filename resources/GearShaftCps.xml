@@ -1,0 +1,697 @@
+<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd" xmlns:s1="http://maxhoffmann.org/GearShaftCPS/Types.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <NamespaceUris>
+        <Uri>http://maxhoffmann.org/GearShaftCPS/</Uri>
+    </NamespaceUris>
+    <Aliases>
+        <Alias Alias="Double">i=11</Alias>
+        <Alias Alias="String">i=12</Alias>
+        <Alias Alias="Organizes">i=35</Alias>
+        <Alias Alias="HasModellingRule">i=37</Alias>
+        <Alias Alias="HasTypeDefinition">i=40</Alias>
+        <Alias Alias="HasSubtype">i=45</Alias>
+        <Alias Alias="HasProperty">i=46</Alias>
+        <Alias Alias="HasComponent">i=47</Alias>
+        <Alias Alias="Range">i=884</Alias>
+        <Alias Alias="EUInformation">i=887</Alias>
+    </Aliases>
+    <Extensions>
+        <Extension>
+            <ModelInfo Tool="UaModeler" Hash="NRM1rjOkrIR6DBIr2tdxHg==" Version="1.4.3"/>
+        </Extension>
+    </Extensions>
+    <UAVariableType DataType="Double" ValueRank="-2" NodeId="ns=1;i=2008" BrowseName="1:DataValueType">
+        <DisplayName>DataValueType</DisplayName>
+        <Description>Simple DataValue type defining EngineeringUnits, Definition and ValuePrecision</Description>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">i=2368</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6015</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6014</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6022</Reference>
+        </References>
+    </UAVariableType>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=2008" NodeId="ns=1;i=6015" BrowseName="Definition">
+        <DisplayName>Definition</DisplayName>
+        <Description>A vendor-specific, human readable string that specifies how the value of this DataItem is calculated.</Description>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=2008</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="EUInformation" ParentNodeId="ns=1;i=2008" NodeId="ns=1;i=6014" BrowseName="EngineeringUnits">
+        <DisplayName>EngineeringUnits</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=2008</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Range" ParentNodeId="ns=1;i=2008" NodeId="ns=1;i=6022" BrowseName="InstrumentRange">
+        <DisplayName>InstrumentRange</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=2008</Reference>
+        </References>
+    </UAVariable>
+    <UAVariableType ValueRank="-2" NodeId="ns=1;i=2002" BrowseName="1:DiameterType">
+        <DisplayName>DiameterType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">i=63</Reference>
+        </References>
+    </UAVariableType>
+    <UAVariableType ValueRank="-2" NodeId="ns=1;i=2003" BrowseName="1:DrillingHoleDiameterType">
+        <DisplayName>DrillingHoleDiameterType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent">ns=1;i=6001</Reference>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=2002</Reference>
+        </References>
+    </UAVariableType>
+    <UAVariable DataType="Double" ParentNodeId="ns=1;i=2003" NodeId="ns=1;i=6001" BrowseName="1:DiameterValue" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>DiameterValue</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=2368</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6003</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6004</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6002</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=2003</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6005</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6006</Reference>
+        </References>
+        <Value>
+            <uax:Double>20</uax:Double>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=6001" NodeId="ns=1;i=6003" BrowseName="Definition">
+        <DisplayName>Definition</DisplayName>
+        <Description>A vendor-specific, human readable string that specifies how the value of this DataItem is calculated.</Description>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6001</Reference>
+        </References>
+        <Value>
+            <uax:String>Diameter of a hole that is produced by drilling machines</uax:String>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="EUInformation" ParentNodeId="ns=1;i=6001" NodeId="ns=1;i=6004" BrowseName="EngineeringUnits">
+        <DisplayName>EngineeringUnits</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6001</Reference>
+        </References>
+        <Value>
+            <uax:ExtensionObject>
+                <uax:TypeId>
+                    <uax:Identifier>i=888</uax:Identifier>
+                </uax:TypeId>
+                <uax:Body>
+                    <uax:EUInformation>
+                        <uax:NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</uax:NamespaceUri>
+                        <uax:UnitId>5066068</uax:UnitId>
+                        <uax:DisplayName>
+                            <uax:Text>mm</uax:Text>
+                        </uax:DisplayName>
+                        <uax:Description>
+                            <uax:Text>millimetre</uax:Text>
+                        </uax:Description>
+                    </uax:EUInformation>
+                </uax:Body>
+            </uax:ExtensionObject>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="Range" ParentNodeId="ns=1;i=6001" NodeId="ns=1;i=6002" BrowseName="EURange">
+        <DisplayName>EURange</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6001</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+        <Value>
+            <uax:ExtensionObject>
+                <uax:TypeId>
+                    <uax:Identifier>i=885</uax:Identifier>
+                </uax:TypeId>
+                <uax:Body>
+                    <uax:Range>
+                        <uax:Low>10</uax:Low>
+                        <uax:High>200</uax:High>
+                    </uax:Range>
+                </uax:Body>
+            </uax:ExtensionObject>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="Range" ParentNodeId="ns=1;i=6001" NodeId="ns=1;i=6005" BrowseName="InstrumentRange">
+        <DisplayName>InstrumentRange</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6001</Reference>
+        </References>
+        <Value>
+            <uax:ExtensionObject>
+                <uax:TypeId>
+                    <uax:Identifier>i=885</uax:Identifier>
+                </uax:TypeId>
+                <uax:Body>
+                    <uax:Range>
+                        <uax:Low>11</uax:Low>
+                        <uax:High>199</uax:High>
+                    </uax:Range>
+                </uax:Body>
+            </uax:ExtensionObject>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="Double" ParentNodeId="ns=1;i=6001" NodeId="ns=1;i=6006" BrowseName="ValuePrecision">
+        <DisplayName>ValuePrecision</DisplayName>
+        <Description>The maximum precision that the server can maintain for the item based on restrictions in the target environment.</Description>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6001</Reference>
+        </References>
+        <Value>
+            <uax:Double>0.01</uax:Double>
+        </Value>
+    </UAVariable>
+    <UAVariableType ValueRank="-2" NodeId="ns=1;i=2004" BrowseName="1:SpeedType">
+        <DisplayName>SpeedType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">i=63</Reference>
+        </References>
+    </UAVariableType>
+    <UAVariableType ValueRank="-2" NodeId="ns=1;i=2006" BrowseName="1:LinearAxisSpeed">
+        <DisplayName>LinearAxisSpeed</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=2004</Reference>
+        </References>
+    </UAVariableType>
+    <UAVariableType ValueRank="-2" NodeId="ns=1;i=2005" BrowseName="1:RotationSpeedType">
+        <DisplayName>RotationSpeedType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=2004</Reference>
+        </References>
+    </UAVariableType>
+    <UAVariableType ValueRank="-2" NodeId="ns=1;i=2007" BrowseName="1:DrillingRotationSpeedType">
+        <DisplayName>DrillingRotationSpeedType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=2005</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6017</Reference>
+        </References>
+    </UAVariableType>
+    <UAVariable DataType="Double" ParentNodeId="ns=1;i=2007" NodeId="ns=1;i=6017" BrowseName="1:SpeedDataValue" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>SpeedDataValue</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">ns=1;i=2008</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6021</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6018</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6020</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=2007</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6019</Reference>
+        </References>
+        <Value>
+            <uax:Double>0</uax:Double>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=6017" NodeId="ns=1;i=6021" BrowseName="Definition">
+        <DisplayName>Definition</DisplayName>
+        <Description>A vendor-specific, human readable string that specifies how the value of this DataItem is calculated.</Description>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6017</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="EUInformation" ParentNodeId="ns=1;i=6017" NodeId="ns=1;i=6018" BrowseName="EngineeringUnits">
+        <DisplayName>EngineeringUnits</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6017</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Range" ParentNodeId="ns=1;i=6017" NodeId="ns=1;i=6020" BrowseName="EURange">
+        <DisplayName>EURange</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6017</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Double" ParentNodeId="ns=1;i=6017" NodeId="ns=1;i=6019" BrowseName="ValuePrecision">
+        <DisplayName>ValuePrecision</DisplayName>
+        <Description>The maximum precision that the server can maintain for the item based on restrictions in the target environment.</Description>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6017</Reference>
+        </References>
+    </UAVariable>
+    <UAObjectType NodeId="ns=1;i=1016" BrowseName="1:MachineComponentType">
+        <DisplayName>MachineComponentType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
+        </References>
+    </UAObjectType>
+    <UAObjectType NodeId="ns=1;i=1017" BrowseName="1:DrillingToolType">
+        <DisplayName>DrillingToolType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent">ns=1;i=6024</Reference>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1016</Reference>
+        </References>
+    </UAObjectType>
+    <UAVariable DataType="Double" ParentNodeId="ns=1;i=1017" NodeId="ns=1;i=6024" BrowseName="1:DrillingRotationSpeed" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>DrillingRotationSpeed</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">ns=1;i=2007</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6025</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1017</Reference>
+        </References>
+        <Value>
+            <uax:Double>0</uax:Double>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="Double" ParentNodeId="ns=1;i=6024" NodeId="ns=1;i=6025" BrowseName="1:SpeedDataValue" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>SpeedDataValue</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">ns=1;i=2008</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6023</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6027</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6028</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6024</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6029</Reference>
+        </References>
+        <Value>
+            <uax:Double>0</uax:Double>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=6025" NodeId="ns=1;i=6023" BrowseName="Definition">
+        <DisplayName>Definition</DisplayName>
+        <Description>A vendor-specific, human readable string that specifies how the value of this DataItem is calculated.</Description>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6025</Reference>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6031</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6037</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="EUInformation" ParentNodeId="ns=1;i=6025" NodeId="ns=1;i=6027" BrowseName="EngineeringUnits">
+        <DisplayName>EngineeringUnits</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6025</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6031</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6037</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Range" ParentNodeId="ns=1;i=6025" NodeId="ns=1;i=6028" BrowseName="EURange">
+        <DisplayName>EURange</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6025</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6031</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6037</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Double" ParentNodeId="ns=1;i=6025" NodeId="ns=1;i=6029" BrowseName="ValuePrecision">
+        <DisplayName>ValuePrecision</DisplayName>
+        <Description>The maximum precision that the server can maintain for the item based on restrictions in the target environment.</Description>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6025</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6031</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6037</Reference>
+        </References>
+    </UAVariable>
+    <UAObjectType NodeId="ns=1;i=1015" BrowseName="1:ProductComponentType">
+        <DisplayName>ProductComponentType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
+        </References>
+    </UAObjectType>
+    <UAObjectType NodeId="ns=1;i=1012" BrowseName="1:GearType">
+        <DisplayName>GearType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent">ns=1;i=6007</Reference>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1015</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1014</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5005</Reference>
+        </References>
+    </UAObjectType>
+    <UAVariable DataType="Double" ParentNodeId="ns=1;i=1012" NodeId="ns=1;i=6007" BrowseName="1:GearInnerDiameter" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>GearInnerDiameter</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent">ns=1;i=6008</Reference>
+            <Reference ReferenceType="HasTypeDefinition">ns=1;i=2003</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1012</Reference>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+        </References>
+        <Value>
+            <uax:Double>0</uax:Double>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="Double" ParentNodeId="ns=1;i=6007" NodeId="ns=1;i=6008" BrowseName="1:DiameterValue" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>DiameterValue</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=2368</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6009</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6007</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6010</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6011</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6012</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6013</Reference>
+        </References>
+        <Value>
+            <uax:Double>20</uax:Double>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=6008" NodeId="ns=1;i=6009" BrowseName="Definition">
+        <DisplayName>Definition</DisplayName>
+        <Description>A vendor-specific, human readable string that specifies how the value of this DataItem is calculated.</Description>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6008</Reference>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+        <Value>
+            <uax:String>Diameter of a hole that is produced by drilling machines</uax:String>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="EUInformation" ParentNodeId="ns=1;i=6008" NodeId="ns=1;i=6010" BrowseName="EngineeringUnits">
+        <DisplayName>EngineeringUnits</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6008</Reference>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+        <Value>
+            <uax:ExtensionObject>
+                <uax:TypeId>
+                    <uax:Identifier>i=888</uax:Identifier>
+                </uax:TypeId>
+                <uax:Body>
+                    <uax:EUInformation>
+                        <uax:NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</uax:NamespaceUri>
+                        <uax:UnitId>5066068</uax:UnitId>
+                        <uax:DisplayName>
+                            <uax:Text>mm</uax:Text>
+                        </uax:DisplayName>
+                        <uax:Description>
+                            <uax:Text>millimetre</uax:Text>
+                        </uax:Description>
+                    </uax:EUInformation>
+                </uax:Body>
+            </uax:ExtensionObject>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="Range" ParentNodeId="ns=1;i=6008" NodeId="ns=1;i=6011" BrowseName="EURange">
+        <DisplayName>EURange</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6008</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+        <Value>
+            <uax:ExtensionObject>
+                <uax:TypeId>
+                    <uax:Identifier>i=885</uax:Identifier>
+                </uax:TypeId>
+                <uax:Body>
+                    <uax:Range>
+                        <uax:Low>10</uax:Low>
+                        <uax:High>200</uax:High>
+                    </uax:Range>
+                </uax:Body>
+            </uax:ExtensionObject>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="Range" ParentNodeId="ns=1;i=6008" NodeId="ns=1;i=6012" BrowseName="InstrumentRange">
+        <DisplayName>InstrumentRange</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6008</Reference>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+        <Value>
+            <uax:ExtensionObject>
+                <uax:TypeId>
+                    <uax:Identifier>i=885</uax:Identifier>
+                </uax:TypeId>
+                <uax:Body>
+                    <uax:Range>
+                        <uax:Low>11</uax:Low>
+                        <uax:High>199</uax:High>
+                    </uax:Range>
+                </uax:Body>
+            </uax:ExtensionObject>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="Double" ParentNodeId="ns=1;i=6008" NodeId="ns=1;i=6013" BrowseName="ValuePrecision">
+        <DisplayName>ValuePrecision</DisplayName>
+        <Description>The maximum precision that the server can maintain for the item based on restrictions in the target environment.</Description>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6008</Reference>
+        </References>
+        <Value>
+            <uax:Double>0.01</uax:Double>
+        </Value>
+    </UAVariable>
+    <UAObjectType NodeId="ns=1;i=1013" BrowseName="1:ShaftType">
+        <DisplayName>ShaftType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1015</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1014</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5005</Reference>
+        </References>
+    </UAObjectType>
+    <UAObjectType NodeId="ns=1;i=1009" BrowseName="1:ProductionLogisticsType">
+        <DisplayName>ProductionLogisticsType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
+        </References>
+    </UAObjectType>
+    <UAObjectType NodeId="ns=1;i=1010" BrowseName="1:ConveyorBeltType">
+        <DisplayName>ConveyorBeltType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1009</Reference>
+        </References>
+    </UAObjectType>
+    <UAObjectType NodeId="ns=1;i=1002" BrowseName="1:ProductionResourceType">
+        <DisplayName>ProductionResourceType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
+        </References>
+    </UAObjectType>
+    <UAObjectType NodeId="ns=1;i=1003" BrowseName="1:MachineType">
+        <DisplayName>MachineType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1002</Reference>
+        </References>
+    </UAObjectType>
+    <UAObjectType NodeId="ns=1;i=1006" BrowseName="1:DrillingMachineType">
+        <DisplayName>DrillingMachineType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1003</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=5001</Reference>
+        </References>
+    </UAObjectType>
+    <UAObject ParentNodeId="ns=1;i=1006" NodeId="ns=1;i=5001" BrowseName="1:DrillingTool">
+        <DisplayName>DrillingTool</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent">ns=1;i=6030</Reference>
+            <Reference ReferenceType="HasTypeDefinition">ns=1;i=1017</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1006</Reference>
+        </References>
+    </UAObject>
+    <UAVariable DataType="Double" ParentNodeId="ns=1;i=5001" NodeId="ns=1;i=6030" BrowseName="1:DrillingRotationSpeed" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>DrillingRotationSpeed</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5001</Reference>
+            <Reference ReferenceType="HasTypeDefinition">ns=1;i=2007</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6031</Reference>
+        </References>
+        <Value>
+            <uax:Double>0</uax:Double>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="Double" ParentNodeId="ns=1;i=6030" NodeId="ns=1;i=6031" BrowseName="1:SpeedDataValue" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>SpeedDataValue</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">ns=1;i=2008</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6026</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6023</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6032</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6027</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6033</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6028</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6030</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6034</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6029</Reference>
+        </References>
+        <Value>
+            <uax:Double>0</uax:Double>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=6031" NodeId="ns=1;i=6026" BrowseName="Definition">
+        <DisplayName>Definition</DisplayName>
+        <Description>A vendor-specific, human readable string that specifies how the value of this DataItem is calculated.</Description>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6031</Reference>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="EUInformation" ParentNodeId="ns=1;i=6031" NodeId="ns=1;i=6032" BrowseName="EngineeringUnits">
+        <DisplayName>EngineeringUnits</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6031</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Range" ParentNodeId="ns=1;i=6031" NodeId="ns=1;i=6033" BrowseName="EURange">
+        <DisplayName>EURange</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6031</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Double" ParentNodeId="ns=1;i=6031" NodeId="ns=1;i=6034" BrowseName="ValuePrecision">
+        <DisplayName>ValuePrecision</DisplayName>
+        <Description>The maximum precision that the server can maintain for the item based on restrictions in the target environment.</Description>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6031</Reference>
+        </References>
+    </UAVariable>
+    <UAObjectType NodeId="ns=1;i=1007" BrowseName="1:MillingMachineType">
+        <DisplayName>MillingMachineType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1003</Reference>
+        </References>
+    </UAObjectType>
+    <UAObjectType NodeId="ns=1;i=1008" BrowseName="1:TurningMachineType">
+        <DisplayName>TurningMachineType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1003</Reference>
+        </References>
+    </UAObjectType>
+    <UAObjectType NodeId="ns=1;i=1004" BrowseName="1:RobotType">
+        <DisplayName>RobotType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1002</Reference>
+        </References>
+    </UAObjectType>
+    <UAObjectType NodeId="ns=1;i=1005" BrowseName="1:AssemblyRobotType">
+        <DisplayName>AssemblyRobotType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1004</Reference>
+        </References>
+    </UAObjectType>
+    <UAObjectType NodeId="ns=1;i=1011" BrowseName="1:ProductType">
+        <DisplayName>ProductType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
+        </References>
+    </UAObjectType>
+    <UAObjectType NodeId="ns=1;i=1014" BrowseName="1:GearShaftCompositionType">
+        <DisplayName>GearShaftCompositionType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1011</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=1012</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=1013</Reference>
+        </References>
+    </UAObjectType>
+    <UAObject NodeId="ns=1;i=5003" BrowseName="1:DrillingMachine">
+        <DisplayName>DrillingMachine</DisplayName>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=85</Reference>
+            <Reference ReferenceType="HasTypeDefinition">ns=1;i=1006</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=5002</Reference>
+        </References>
+    </UAObject>
+    <UAObject ParentNodeId="ns=1;i=5003" NodeId="ns=1;i=5002" BrowseName="1:DrillingTool">
+        <DisplayName>DrillingTool</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent">ns=1;i=6036</Reference>
+            <Reference ReferenceType="HasTypeDefinition">ns=1;i=1017</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5003</Reference>
+        </References>
+    </UAObject>
+    <UAVariable DataType="Double" ParentNodeId="ns=1;i=5002" NodeId="ns=1;i=6036" BrowseName="1:DrillingRotationSpeed" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>DrillingRotationSpeed</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5002</Reference>
+            <Reference ReferenceType="HasTypeDefinition">ns=1;i=2007</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6037</Reference>
+        </References>
+        <Value>
+            <uax:Double>0</uax:Double>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="Double" ParentNodeId="ns=1;i=6036" NodeId="ns=1;i=6037" BrowseName="1:SpeedDataValue" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>SpeedDataValue</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">ns=1;i=2008</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6023</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6038</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6027</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6039</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6028</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6036</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6040</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6029</Reference>
+        </References>
+        <Value>
+            <uax:Double>0</uax:Double>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="EUInformation" ParentNodeId="ns=1;i=6037" NodeId="ns=1;i=6038" BrowseName="EngineeringUnits">
+        <DisplayName>EngineeringUnits</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6037</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Range" ParentNodeId="ns=1;i=6037" NodeId="ns=1;i=6039" BrowseName="EURange">
+        <DisplayName>EURange</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6037</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Double" ParentNodeId="ns=1;i=6037" NodeId="ns=1;i=6040" BrowseName="ValuePrecision">
+        <DisplayName>ValuePrecision</DisplayName>
+        <Description>The maximum precision that the server can maintain for the item based on restrictions in the target environment.</Description>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6037</Reference>
+        </References>
+    </UAVariable>
+    <UAObject NodeId="ns=1;i=5005" BrowseName="1:GearShaftComposition">
+        <DisplayName>GearShaftComposition</DisplayName>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=85</Reference>
+            <Reference ReferenceType="HasTypeDefinition">ns=1;i=1014</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=1012</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=1013</Reference>
+        </References>
+    </UAObject>
+</UANodeSet>

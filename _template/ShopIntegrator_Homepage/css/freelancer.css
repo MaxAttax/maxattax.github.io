@@ -16,6 +16,10 @@ h6 {
 	font-size: 16pt;
 }
 
+.model_small_text {
+	font-size: 12pt;
+}
+
 @media screen and (max-width: 480px) {
 	.logo-div {
 		display: none;

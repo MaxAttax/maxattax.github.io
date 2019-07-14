@@ -71,6 +71,7 @@
         <hr class="star-dark mb-5">
         <div class="row">
 			<div class="col-xs-8 max-auto" style="margin-left: 14px">
+				<!--
 				<h3>
 					Java Programming
 				</h3>
@@ -80,9 +81,12 @@
 				<div>
 					If you didn't install the Eclipse Java IDE so far, please download from <a target="_blank" href="http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/oxygen/3a/eclipse-java-oxygen-3a-win32-x86_64.zip">here</a>.
 				</div>
+				-->
 				<h3>
 					Getting Started with MQTT
 				</h3>
+				
+				This first part is only relevant, if you would like to run an MQTT broker on your Windows system. Since we are mostly using Unix-based systems such as Raspberry Pi as MQTT broker, you might want to check out the next section "Setting up MQTT on a Raspberry Pi".
 				
 				<h5>
 					Mosquitto
@@ -129,7 +133,7 @@
 						<li style="margin-top: 6px">If no error occurs a local MQTT broker will be available under 'tcp://localhost:1883'.</li>
 					</ul>
 				</div>
-				
+				<!--
 				<h5>
 					Implementing the MQTT application
 				</h5>
@@ -147,6 +151,33 @@
 						</li>
 					</ul>
 				</div>
+				-->
+				<h5>
+					Setting up MQTT on a Raspberry Pi
+				</h5>
+				<div style="margin-top: 10px">
+					<ul>
+						<li>Connect to the Raspberry Pi via VNC viewer, please download the software from <a target="_blank" href="https://www.realvnc.com/download/viewer/">here</a>.</li>
+						<li>Run the following commands in your terminal window:
+							<ul>
+								<li>Install Mosquitto Clients</li>
+								<code>
+									sudo apt-get install mosquitto mosquitto-clients
+								</code>
+								<li>Install Python PIP to install Paho</li>
+								<code>
+									sudo apt-get install python-pip
+								</code>
+								<li>Install Paho-MQTT</li>
+								<code>
+									sudo pip install paho-mqtt
+								</code>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				
+				
 				<h5>
 					Demo Application for MQTT
 				</h5>
@@ -203,6 +234,27 @@
 				</div>
 				
 				<h5>
+					Setting up your Node-RED environemt for additional applications
+				</h5>
+				
+				<div style="margin-top: 10px">
+					<ul>
+						<li>Click on the menu on the upper right corner</li>
+						<li>Search for <code style="margin-left: 4px; margin-right: 4px">Manage Palette</code> and click on it</li>
+						<li>
+							Install the following libraries:
+							<ul>
+								<li><code>OPC UA</code></li>
+								<li><code>IIoT OPC UA</code></li>
+								<li><code>openweathermap</code></li>
+								<li><code>Node-RED Dashboard</code></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				
+				
+				<h5>
 					OpenWeatherMap example
 				</h5>
 				
@@ -243,6 +295,7 @@
 					</ul>
 				</div>
 				
+				<!--
 				<h3>
 					Java Programming with MQTT, JSON and SQLite
 				</h3>
@@ -336,7 +389,9 @@
 					<li>The Machine Mapping file: <a target="_blank" href="resources/MachineData.java">MachineData.java</a>.</li>
 					<li>Please download the main solutions file: <a target="_blank" href="resources/MqttSubscribe.java">MqttSubscribe.java</a>.</li>
 				</ul>
+				-->
 				
+				<!--
 				<h3>
 					Adding Meta-Data with Node-RED and Consolidation into CSV file
 				</h3>
@@ -347,6 +402,72 @@
 						<li>For the consolidation of data into a CSV file, multiple nodes have to be used: For the CSV Parser and for the File Consolidation</li>	
 					</ul>
 				</div>
+				-->
+				
+				<h3>
+					Install Anaconda
+				</h3>
+				<div>
+					<ul>
+						<li>
+							For preparation, please install <a target="_blank" href="https://repo.anaconda.com/archive/Anaconda3-5.3.0-Windows-x86_64.exe">Anaconda</a>.
+						</li>
+					</ul>
+				</div>
+				
+				<h3>
+					Python Code for Node-RED MQTT project
+				</h3>
+				<div style="margin-top: 10px">
+					The MQTT Subscription implementation using Python can be found <a href="resources/subscribe_data.py">here</a>.
+				</div>
+				
+				<h3>
+					Setting up Python and Anaconda for OPC UA
+				</h3>
+				<div style="margin-top: 10px">
+					<ul>
+						<li>Open the terminal (cmd.exe)</li>
+						<li>Activate the base anaconda environment</li>
+						<code>activate base</code>
+						<li>Install the OPC UA module using pip</li>
+						<code>pip install opcua</code>
+						<li>Update LXML library to newest version</li>
+						<code>pip install lxml -U</code>
+					</ul>
+				</div>
+				
+				
+				<!--
+				<h3>
+					Knowledge Discovery in Databases (KDD) and Data Mining
+				</h3>
+				<h5>
+					RapidMiner Studio
+				</h5>
+				<div>
+					If you didn't install the RapidMiner so far, please Version 8.1 from  <a target="_blank" href="https://my.rapidminer.com/nexus/account/index.html#downloads">here</a> and register yourself..
+				</div>
+				-->
+				
+				<h3>
+					Getting Started with OPC UA
+				</h3>
+				
+				<h5>
+					OPC UA Modeling and Client Software
+				</h5>
+				<div style="margin-top: 10px">
+					In order to make use of OPC UA Modeling and to browse the respective UA Models, some software needs to be installed.
+					<ul>
+						<li>To develop information models, the "UaModeler" is needed. If not already installed, please download and install from <a href="resources/uamodeler-bin-win32-x86-vs2008sp1-v1.4.3-352.exe">here</a>.</li>
+						<li>To browse OPC UA Servers, a Client application is needed. Please download and install the "UaExpert" from <a href="resources/uaexpert-bin-win32-x86-vs2008sp1-v1.4.2-256.exe">here</a>.</li>
+					</ul>
+				</div>
+				
+				<h5>
+					Please download the GearShaft exported XML from <a href="resources/GearShaftCps.xml">here</a>.
+				</h5>
 				
 				<h3>
 					Data Analytics
@@ -357,27 +478,12 @@
 				</h5>
 				<div style="margin-top: 10px">
 					<ul>
-						<li>Please download the analysis CSV file from <a target="_blank" href="resources\Day1\02 - Hands On RapidMiner\SummerSchools_Dataset.csv">here</a>.</li>
+						<li>Please download the analysis CSV file from <a target="_blank" href="resources\Day1\02 - Hands On RapidMiner\gear_shaft_data.csv">here</a>.</li>
 					</ul>
 				</div>
 				
 				
 				<!--
-				
-				<h3>
-					Getting Started with OPC UA
-				</h3>
-				
-				<h5>
-					OPC UA Modeling and Client Software
-				</h5>
-				<div style="margin-top: 10px">
-					<ul>
-						<li>In order to make use of OPC UA Modeling and to browse the respective UA Models, some software needs to be installed.</li>	
-						<li>To develop information models, the "UaModeler" is needed. If not already installed, please download and install from <a href="resources/uamodeler-bin-win32-x86-vs2008sp1-v1.4.3-352.exe">here</a>.</li>
-						<li>To browse OPC UA Servers, a Client application is needed. Please download and install the "UaExpert" from <a href="resources/uaexpert-bin-win32-x86-vs2008sp1-v1.4.2-256.exe">here</a>.</li>
-					</ul>
-				</div>
 				
 				<h5>
 					Java OPC UA Client and Server SDK
@@ -647,12 +753,21 @@ public class MyUaServer {
         </div>
       </div>
     </footer>
-
+	
+	<div class="copyright py-4 text-center text-white">
+      <div class="container">
+        <small>DISCLAIMER: The links on this page are being provided as a convenience and for informational purposes only; they do not constitute an endorsement or an approval by maxhoffmann.org of any of the products, services or opinions of the corporation or organization or individual. maxhoffmann.org bears no responsibility for the accuracy, legality or content of the external site or for that of subsequent links. This also applies for programs provided from external resources. Contact the external site for answers to questions regarding its content.</small>
+      </div>
+    </div>
+	
     <div class="copyright py-4 text-center text-white">
       <div class="container">
         <small>Copyright &copy; Max Hoffmann - 2018</small>
       </div>
     </div>
+	
+	
+	
 
     <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
     <div class="scroll-to-top d-lg-none position-fixed ">
